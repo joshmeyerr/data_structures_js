@@ -15,19 +15,19 @@ reverse('joshua')
 
 function mergeSorted(arr1, arr2) {
     const mergedArr = [];
-    let item1 = arr1[0];
-    let item2 = arr2[0];
+    let arrItemLeft = arr1[0];
+    let arrItemRight = arr2[0];
     let i = 1;
 
 
-    while (item1 || item2) {
-        if (item1 < item2) {
-            mergedArr.push(item1);
-            item1 = arr1[i];
+    while (arrItemLeft || arrItemRight) {
+        if (arrItemLeft < arrItemRight) {
+            mergedArr.push(arrItemLeft);
+            arrItemLeft = arr1[i];
             i++;
         } else {
-            mergedArr.push(item2);
-            item2 = arr2[i];
+            mergedArr.push(arrItemRight);
+            arrItemRight = arr2[i];
             i++;
         }
         console.log(mergedArr);
