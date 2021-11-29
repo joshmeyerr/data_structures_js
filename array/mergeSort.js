@@ -11,40 +11,9 @@ function mergeSort(arr) {
    return merge(mergeSort(left), mergeSort(arr))
 }
 
-
-
-
-
-
-
-
-// console.log( mergeSort([5,4,3,2,1,6,7,8,9]) );
 console.log(mergeSort([50, 31, 98, 52, 65, 62, 90, 8, 7, 92, 82, 95, 6, 71, 82, 41, 99, 25, 17, 7]));
 // mergeSorted([50, 31, 98, 52, 65, 62, 90, 8, 7, 92, 82, 95, 6, 71, 82, 41, 99, 25, 17, 7])
 
-
-
-
-// function merge(arr1, arr2) {
-//     const mergedArr = [];
-//     let arrItemLeft = arr1[0];
-//     let arrItemRight = arr2[0];
-//     let i = 1;
-
-//     while (arrItemLeft || arrItemRight) {
-//         if (arrItemLeft < arrItemRight) {
-//             mergedArr.push(arrItemLeft);
-//             arrItemLeft = arr1[i];
-//             i++;
-//         } else {
-//             mergedArr.push(arrItemRight);
-//             arrItemRight = arr2[i];
-//             i++;
-//         }
-//         console.log(mergedArr);
-//         return mergedArr;
-//     } 
-// }
 
 function merge(arr1, arr2) {
 
